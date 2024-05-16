@@ -1,10 +1,18 @@
+* {
+  * margin: none;
+  * padding: none;
+  * border: none;
+}
 body {
   background-color:pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: vertical;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  margin: 0px;
 }
 h1 {
   color:blue;
+}
+ul, li {
+  list-style: none;
+  
 }
