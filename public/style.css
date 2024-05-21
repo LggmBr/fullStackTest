@@ -3,16 +3,29 @@
   * padding: none;
   * border: none;
 }
+html {
+  margin:0;
+}
 body {
-  background-color:pink;
+  background-image: linear-gradient(#2266ff, #3377ee)
+}
+.main-grid {
+  height: 100%;
+  width: 100%;
+  gap: 10px 10px;
   display: grid;
-  grid-template-columns: 80px 1fr;
-  margin: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr
 }
-h1 {
-  color:blue;
+.button {
+  height: auto;
+  width: auto;
 }
-ul, li {
-  list-style: none;
-  
+.display {
+  grid-column: 1 / span 3;
+}
+.box {
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 2px;
 }
